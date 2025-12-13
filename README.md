@@ -1,5 +1,8 @@
 # KONICHIWA, MINA-SAN!
 
+[![Listen](https://img.shields.io/badge/Listen-Music-green)](https://youtu.be/QNYT9wVwQ8A?si=cd0lzHemsey1LByp)
+
+
 **To you**
 
 **Yes, my love to you**

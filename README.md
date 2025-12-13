@@ -1,9 +1,9 @@
 # KONICHIWA, MINA-SAN!
 
-To you
-Yes, my love to you
-Yes, my love to you, you
-To you
+**To you**
+**Yes, my love to you**
+**Yes, my love to you, you**
+**To you**
 
 Watashi wa watashi, anata wa anata to
 Yuube itteta sonna ki mo suru wa

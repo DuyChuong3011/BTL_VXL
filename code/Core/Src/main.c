@@ -22,7 +22,13 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "i2c-lcd.h"
+#include "button.h"
+#include "software_timer.h"
+#include "global.h"
+#include "auto.h"
+#include "set.h"
+#include "display.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -93,7 +99,9 @@ int main(void)
   MX_GPIO_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-
+  lcd_init();
+        HAL_Delay(2000);
+        lcd_clear();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -238,7 +246,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, LED2A_Pin|LED2B_Pin|LED2BB4_Pin|LED1A_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, LED2A_Pin|LED1B_Pin|LED2B_Pin|LED1A_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : button1_Pin button2_Pin button3_Pin */
   GPIO_InitStruct.Pin = button1_Pin|button2_Pin|button3_Pin;
@@ -259,8 +267,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(button4_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : LED2A_Pin LED2B_Pin LED2BB4_Pin LED1A_Pin */
-  GPIO_InitStruct.Pin = LED2A_Pin|LED2B_Pin|LED2BB4_Pin|LED1A_Pin;
+  /*Configure GPIO pins : LED2A_Pin LED1B_Pin LED2B_Pin LED1A_Pin */
+  GPIO_InitStruct.Pin = LED2A_Pin|LED1B_Pin|LED2B_Pin|LED1A_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -269,7 +277,11 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	timer_run();
+	getkeyinput();
+}
 /* USER CODE END 4 */
 
 /**

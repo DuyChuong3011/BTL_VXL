@@ -64,8 +64,8 @@ all: main-build
 main-build: BTL_VXL.elf secondary-outputs
 
 # Tool invocations
-BTL_VXL.elf: $(OBJS) $(USER_OBJS) D:\github\VXL_VDK\gitbtlvxl\code\STM32F103RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "BTL_VXL.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\github\VXL_VDK\gitbtlvxl\code\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BTL_VXL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+BTL_VXL.elf: $(OBJS) $(USER_OBJS) C:\Users\Admin\OneDrive\Documents\HOC_BAI\VXL\BTL_VXL\code\STM32F103RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "BTL_VXL.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Admin\OneDrive\Documents\HOC_BAI\VXL\BTL_VXL\code\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BTL_VXL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

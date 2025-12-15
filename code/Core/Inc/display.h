@@ -1,10 +1,3 @@
-/*
- * display.h
- *
- *  Created on: Dec 7, 2025
- *      Author: nguye
- */
-
 #ifndef INC_DISPLAY_H_
 #define INC_DISPLAY_H_
 

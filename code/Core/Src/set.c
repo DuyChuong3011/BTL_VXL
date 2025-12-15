@@ -1,9 +1,3 @@
-/*
- * set.c
- *
- *  Created on: Dec 14, 2025
- *      Author: nguye
- */
 #include "set.h"
 #include "button.h"
 #include "global.h"

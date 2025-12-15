@@ -1,10 +1,3 @@
-/*
- * global.h
- *
- *  Created on: Dec 7, 2025
- *      Author: nguye
- */
-
 #ifndef INC_GLOBAL_H_
 #define INC_GLOBAL_H_
 

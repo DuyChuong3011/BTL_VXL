@@ -1,2 +1,2 @@
-display.c:12:6:lcd_display	8	static
-display.c:28:6:updateBuffer	4	static
+display.c:5:6:lcd_display	8	static
+display.c:21:6:updateBuffer	4	static

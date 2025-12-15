@@ -1,11 +1,3 @@
-/*
- * global.c
- *
- *  Created on: Dec 7, 2025
- *      Author: nguye
- */
-
-
 int mode=0; //Trạng thái của hệ thống
 
 int red_time=5; //Thời gian đèn đỏ sáng

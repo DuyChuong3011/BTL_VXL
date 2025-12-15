@@ -1,10 +1,3 @@
-/*
- * display.c
- *
- *  Created on: Dec 7, 2025
- *      Author: nguye
- */
-
 #include "display.h"
 #include "i2c-lcd.h"
 #include "global.h"

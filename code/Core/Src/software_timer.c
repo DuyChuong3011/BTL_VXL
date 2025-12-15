@@ -1,9 +1,3 @@
-/*
- * software_timer.c
- *
- *  Created on: Dec 14, 2025
- *      Author: nguye
- */
 #include "software_timer.h"
 #include "main.h"
 

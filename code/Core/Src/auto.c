@@ -1,18 +1,8 @@
-/*
- * auto.c
- *
- *  Created on: Dec 7, 2025
- *      Author: nguye
- */
-
-
 #include "auto.h"
 #include "software_timer.h"
 #include "main.h"
 #include "global.h"
 #include "display.h"
-
-
 
 void automode(){
 

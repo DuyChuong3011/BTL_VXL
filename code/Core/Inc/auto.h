@@ -1,10 +1,3 @@
-/*
- * auto.h
- *
- *  Created on: Dec 7, 2025
- *      Author: nguye
- */
-
 #ifndef INC_AUTO_H_
 #define INC_AUTO_H_
 
